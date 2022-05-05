@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SampleProject</string>
+    <string name="increment_counter">Increment Counter</string>
+    <string name="counter">Counter</string>
+    <string name="see_logs">See Logs</string>
+    <string name="delete_logs">Delete Logs</string>
+    <string name="_0">0</string>
+    <string name="counter_label">Counter</string>
+    <string name="reset_counter">Reset Counter</string>
+    <string name="message">Message</string>
+    <string name="time_stamp">Time Stamp</string>
+    <string name="count">Count</string>
+</resources>
