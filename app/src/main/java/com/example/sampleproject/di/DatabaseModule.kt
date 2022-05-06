@@ -1,6 +1,7 @@
 package com.example.sampleproject.di
 
 import android.content.Context
+import androidx.room.Room
 import com.example.sampleproject.db.AppDatabase
 import com.example.sampleproject.db.LogDao
 import dagger.Module
@@ -21,6 +22,6 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun provideDatabase(@ApplicationContext context: Context): AppDatabase {
-        return AppDatabase.getDatabase(context)
+        return Room.databaseBuilder(context,AppDatabase::class.java,"appDatabase.db").build()
     }
 }
