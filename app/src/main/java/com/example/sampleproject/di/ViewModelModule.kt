@@ -1,5 +1,7 @@
 package com.example.sampleproject.di
 
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
 import androidx.lifecycle.ViewModelProvider
 import com.example.sampleproject.db.LogDao
 import com.example.sampleproject.db.LogRepository
@@ -20,7 +22,7 @@ class ViewModelModule {
 
     @Provides
     @ActivityRetainedScoped
-    fun provideViewModelFactory(logRepository: LogRepository): ViewModelProvider.Factory {
-        return ViewModelFactory(logRepository)
+    fun provideViewModelFactory(logRepository: LogRepository, dataStore: DataStore<Preferences>): ViewModelProvider.Factory {
+        return ViewModelFactory(logRepository, dataStore)
     }
 }

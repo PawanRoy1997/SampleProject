@@ -1,6 +1,5 @@
 package com.example.sampleproject.db
 
-import kotlinx.coroutines.flow.toList
 import javax.inject.Inject
 
 class LogRepository @Inject constructor(private val dao: LogDao) {

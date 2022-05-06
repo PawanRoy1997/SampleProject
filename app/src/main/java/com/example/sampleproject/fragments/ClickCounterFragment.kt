@@ -40,7 +40,7 @@ class ClickCounterFragment : Fragment() {
         viewModel.lastCountLD.observe(viewLifecycleOwner) { counting ->
             binding.counter.text = counting.toString()
         }
-        viewModel.getLastCount()
+//        viewModel.getLastCount()
         binding.deleteLogs.setOnClickListener(getDeleteBtnListener())
         binding.incrementCounter.setOnClickListener(getIncrementBtnListener())
         binding.seeLogs.setOnClickListener(getSeeLogsBtnListener())
