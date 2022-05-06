@@ -13,4 +13,5 @@ plugins {
 
 ext {
     room_version = '2.4.2'
+    datastore_version = '1.0.0'
 }

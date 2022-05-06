@@ -51,6 +51,9 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
+    // Datastore Preference one
+    implementation "androidx.datastore:datastore-preferences:$datastore_version"
+
     // Room Database
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
